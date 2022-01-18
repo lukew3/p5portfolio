@@ -1,0 +1,17 @@
+{
+  "name": "p5portfolio",
+  "version": "1.0.0",
+  "description": "Showcase your p5 sketches on a generated static site.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pug src/index.pug -o dist/; cp src/styles.css dist/styles.css"
+  },
+  "keywords": [],
+  "author": "Luke Weiler",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "pug": "^3.0.2"
+  }
+}
