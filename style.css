@@ -1,0 +1,13 @@
+html {
+	background-color: lightgrey;
+}
+main {
+	display: flex;
+	justify-content: center;
+	height: 90vh;
+	align-items: center;
+}
+#indexContent {
+	width: 500px;
+	margin: auto;
+}
