@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "pug src/index.pug -o dist/; cp src/styles.css dist/styles.css"
+    "start": "node index.js watch",
+    "build": "node index.js build"
   },
   "keywords": [],
   "author": "Luke Weiler",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "p5": "^1.4.0"
+  },
   "devDependencies": {
+    "chokidar": "^3.5.3",
     "pug": "^3.0.2"
   }
 }

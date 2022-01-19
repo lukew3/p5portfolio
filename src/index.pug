@@ -2,7 +2,11 @@ doctype html
 html(lang='en')
   head
     title p5 portfolio
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='styles.css')
+    script(src='main.js')
   body
-    h1 <name>'s p5 portfolio
+    h1 #{name}'s p5 portfolio
     div#directory
-      a(href='/test')
+      each project in projects
+        p= project
