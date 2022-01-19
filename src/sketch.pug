@@ -1,0 +1,11 @@
+doctype html
+html(lang='en')
+  head
+    title #{projectName}
+    meta(charset='utf-8')
+    link(rel='stylesheet' href='style.css')
+    script(src='/p5.min.js')
+    script(src='/p5.sound.min.js')
+  body
+    // Might want to make this a for each file in dir add that file
+    script(src=`/${projectName}/sketch.js`)

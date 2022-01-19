@@ -3,10 +3,11 @@ html(lang='en')
   head
     title p5 portfolio
     meta(charset='utf-8')
-    link(rel='stylesheet' href='styles.css')
-    script(src='main.js')
+    link(rel='stylesheet' href='style.css')
   body
-    h1 #{name}'s p5 portfolio
-    div#directory
-      each project in projects
-        p= project
+    div#indexContent
+      h1 #{name}'s p5 portfolio
+      div#directory
+        each project in projects
+          li
+            a(href=`/${project}.html`)= project
