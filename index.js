@@ -1,6 +1,8 @@
 const pug = require('pug');
 const fs = require('fs');
 const chokidar = require('chokidar');
+const express = require('express');
+const open = require('open');
 
 const main = () => {
 	const mode = process.argv[2];
@@ -52,6 +54,11 @@ const watch = () => {
 	chokidar.watch('./src', {ignoreInitial: true}).on('all', () => {
 		build();
 	});
+	const server = express();
+	server.use(express.static('./dist'));
+	server.listen(3000);
+	console.log('Server running at localhost:5000');
+	open('localhost:3000');
 }
 
 main();
