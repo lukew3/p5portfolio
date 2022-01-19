@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js watch",
-    "build": "node index.js build"
+    "build": "node index.js build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "Luke Weiler",
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "chokidar": "^3.5.3",
+    "gh-pages": "^3.2.3",
     "pug": "^3.0.2"
   }
 }
