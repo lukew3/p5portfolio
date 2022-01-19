@@ -16,8 +16,8 @@
     "p5": "^1.4.0"
   },
   "devDependencies": {
+    "browser-sync": "^2.27.7",
     "chokidar": "^3.5.3",
-    "express": "^4.17.2",
     "fs-extra": "^10.0.0",
     "gh-pages": "^3.2.3",
     "open": "^8.4.0",

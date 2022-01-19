@@ -3,6 +3,7 @@ const fs = require('fs-extra');
 const chokidar = require('chokidar');
 const express = require('express');
 const open = require('open');
+const bs = require('browser-sync');
 
 const main = () => {
 	const mode = process.argv[2];
@@ -64,14 +65,13 @@ const build = async () => {
 
 const watch = () => {
 	build();
+	bs.init({
+		server: './dist'
+	});
 	chokidar.watch('./src', {ignoreInitial: true}).on('all', () => {
 		build();
+		bs.reload();
 	});
-	const server = express();
-	server.use(express.static('./dist'));
-	server.listen(3000);
-	console.log('Server running at localhost:5000');
-	open('localhost:3000');
 }
 
 main();
