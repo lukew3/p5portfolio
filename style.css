@@ -11,3 +11,9 @@ main {
 	width: 500px;
 	margin: auto;
 }
+.backArrowSvg {
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	height: 30px;
+	margin: 10px;
+}
