@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+	font-family: 'Roboto', sans-serif;
+	color: #f2f2f2;
+}
 html {
-	background-color: lightgrey;
+	background-color: #222222;
 }
 main {
 	display: flex;
@@ -10,6 +15,7 @@ main {
 #indexContent {
 	width: 500px;
 	margin: auto;
+	margin-top: 30px;
 }
 .backArrowSvg {
 	-webkit-transform: scaleX(-1);
@@ -17,3 +23,9 @@ main {
 	height: 30px;
 	margin: 10px;
 }
+.backArrowPath {
+	background-color: white;
+	color: white;
+	fill: #ffffff;
+}
+
