@@ -21,11 +21,13 @@ main {
 	-webkit-transform: scaleX(-1);
 	transform: scaleX(-1);
 	height: 30px;
-	margin: 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
 }
-.backArrowPath {
-	background-color: white;
-	color: white;
-	fill: #ffffff;
+.sketchHeader {
+	display: flex;
+	position: relative;
+	width: 100%;
+	justify-content: center;
 }
-
