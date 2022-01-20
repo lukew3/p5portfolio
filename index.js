@@ -29,6 +29,9 @@ const makeDist = () => {
 	fs.copyFile('./src/style.css', './dist/style.css', (err) => {
 		if (err) console.log(err);
 	});
+	fs.copyFile('./src/right-arrow.svg', './dist/right-arrow.svg', (err) => {
+		if (err) console.log(err);
+	});
 	/*
 	 * Removed since no js outside of p5 will be needed
 	fs.copyFile('./src/main.js', './dist/main.js', (err) => {

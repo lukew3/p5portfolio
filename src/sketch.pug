@@ -4,8 +4,10 @@ html(lang='en')
     title #{projectName}
     meta(charset='utf-8')
     link(rel='stylesheet' href='style.css')
-    script(src='/p5.min.js')
-    script(src='/p5.sound.min.js')
+    script(src='./p5.min.js')
+    script(src='./p5.sound.min.js')
   body
+    a(href='./')
+      img.backArrowSvg(src='./right-arrow.svg')
     // Might want to make this a for each file in dir add that file
-    script(src=`/${projectName}/sketch.js`)
+    script(src=`./${projectName}/sketch.js`)
