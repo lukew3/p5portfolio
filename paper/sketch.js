@@ -4,7 +4,7 @@ function setup() {
 }
 
 function draw() {
-	background(240);
+	background(225);
 	paper();
 }
 
