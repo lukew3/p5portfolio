@@ -1,7 +1,6 @@
 const pug = require('pug');
 const fs = require('fs-extra');
 const chokidar = require('chokidar');
-const express = require('express');
 const open = require('open');
 const bs = require('browser-sync');
 
